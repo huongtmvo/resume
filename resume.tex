@@ -1,0 +1,65 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+% File:         resume.tex
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Nov 19, 2021
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\author{Huong Vo} % Name Here
+\def\phone{(530)636-5058}
+\def\city{Bay Area, CA}
+\def\email{huongtmvo@gmail.com}
+\def\LinkedIn{huongvo99} % linkedin.com/in/______
+\def\github{huongvo99} % github username
+\def\role{Data Scientist / Junior Developer} % JOB TITLE
+
+\begin{document}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+    
+\import{sections/}{_header}
+\import{sections/}{objective}
+
+\section{Skills}
+\import{sections/}{skills}
+
+
+\section{Technical Experience}
+\import{sections/}{tech}
+
+\section{Education}
+\import{sections/}{education}
+
+
+\section{Additional Experience}
+\import{sections/}{experience}
+
+
+% make a newpage wherever it is a clean break
+% \newpage
+
+\section{Honor and Awards}
+\import{sections/}{awards}
+\section{Activities}
+\import{sections/}{activities}
+
+
+\end{document}
